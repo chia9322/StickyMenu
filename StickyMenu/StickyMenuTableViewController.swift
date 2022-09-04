@@ -13,7 +13,8 @@ class StickyMenuTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Sticky Menu"
+        tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
+//        navigationItem.title = "Sticky Menu"
         configureHeaderView()
         selectButton(0)
     }
